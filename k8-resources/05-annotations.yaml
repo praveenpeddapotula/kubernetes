@@ -4,7 +4,7 @@ metadata:
   name: annotations
   labels:
    course: kubernetes
-   duration: '100 hrs'
+   trainer: joindevops
   annotations:
     kubernetes.io/created-by: 'sivakumar'
     jenkins.build.url: 'https://jenkins.daws78s.online/expense/job/backend/54'
