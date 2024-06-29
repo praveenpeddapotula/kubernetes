@@ -7,4 +7,5 @@ sudo mv /tmp/eksctl /usr/local/bin
 #####install kubectl #####
  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
  sudo chmod +x kubectl
-sudo mv /tmp/kubectl /usr/local/bin
+mkdir -p ~/.local/bin
+mv ./kubectl ~/.local/bin/kubectl
