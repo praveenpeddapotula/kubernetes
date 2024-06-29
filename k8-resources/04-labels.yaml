@@ -1,13 +1,13 @@
 kind: pod
 apiVersion: v1 
 metadata:
- name: labels
- labels:
+  name: labels
+  labels:
     course: kubernetes
     trainer: sivakumar
 spec:
- containers:
- - name: nginx
-   image: nginx
+  containers:
+  - name: nginx
+    image: nginx
 
 
