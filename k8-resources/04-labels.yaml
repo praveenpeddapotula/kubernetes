@@ -1,4 +1,4 @@
-kind: pod
+kind: Pod #Pod 'P' must be capital letter
 apiVersion: v1 
 metadata:
   name: labels
