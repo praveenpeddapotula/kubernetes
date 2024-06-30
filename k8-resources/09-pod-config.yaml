@@ -8,7 +8,7 @@ spec:
     image: nginx
     envFrom:
     - configMapRef:
-      name: kubernetes
+        name: kubernetes
     # env:
     # - name:  course
     #   valueFrom:
