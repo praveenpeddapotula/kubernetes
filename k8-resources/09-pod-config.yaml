@@ -1,0 +1,19 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod-config
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name:  course
+      valueFrom:
+            configMapKeyRef:
+              name: kubernetes           # The ConfigMap this value comes from.
+              key: course # The key to fetch. 
+    - name:  trainer
+      valueFrom:
+            configMapKeyRef:
+              name: kubernetes
+              key: trainer
