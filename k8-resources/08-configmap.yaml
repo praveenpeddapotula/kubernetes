@@ -1,0 +1,8 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: kubernetes
+data: 
+ course: "Devops with AWS"
+ trainer: "sivakumar"
+ github: "https://github.com/praveenpeddapotula/kubernetes.git"
