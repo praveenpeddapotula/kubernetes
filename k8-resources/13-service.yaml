@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: nginx-service
+  name: nginx
 spec:
   selector:
     name: nginx
@@ -9,7 +9,7 @@ spec:
     project: expense
     component: frontend
   ports:
-   - protocol: tcp
+   - protocol: TCP
      port: 80
      targetport: 80
 
