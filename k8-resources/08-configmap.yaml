@@ -1,4 +1,4 @@
-kind: Pod
+kind: ConfigMap
 apiVersion: v1
 metadata:
   name: kubernetes
