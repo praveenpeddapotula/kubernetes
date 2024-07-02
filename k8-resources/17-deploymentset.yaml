@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: myapp
+        app: nginx
         tier: frontend
         project: expense
     spec:
