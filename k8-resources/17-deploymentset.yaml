@@ -1,0 +1,5 @@
+kind: deployment
+apiVersion: apps/v1
+metadata:
+  name: nginx-deployment
+  matchLabels:
