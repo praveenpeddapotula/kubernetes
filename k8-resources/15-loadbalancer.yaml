@@ -2,8 +2,8 @@ kind: Service
 apiVersion: v1
 metadata:
   name: nginx-lb
-  spec:
-   type: LoadBalancer
+spec:
+  type: LoadBalancer
   selector:
           name: nginx
           environment: dev
