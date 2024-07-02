@@ -1,9 +1,9 @@
-apiVersion: v1
 kind: Service
-metadata: 
-  name: nginx-np
-spec:
-  type: NodePort
+apiVersion: v1
+metadata:
+  name: nginx-lb
+  spec:
+   type: loadBalancer
   selector:
           name: nginx
           environment: dev
@@ -13,7 +13,4 @@ spec:
     - protocol: TCP
       port: 80 #service-port
       targetPort: 80 #target-port
-      nodePort: 32600 #here node port is to get that fixed port no 
-
-
-
+      nodePort: 32601
