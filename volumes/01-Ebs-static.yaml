@@ -55,9 +55,9 @@ spec:
       claimName: ebs-static
 ---
 apiVersion: v1 
-kind: service 
+kind: Service 
 metadata:
-  name: ebs-static
+  name: nginx-lb
 spec:
   type: LoadBalancer
   selector:
