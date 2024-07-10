@@ -3,7 +3,7 @@ apiVersion: PersistentVolumeClaim
 metadata:
   name: ebs-dynamic
 spec:
-storageClassName: ebs-sc
+storageClassName: "ebs-sc"
 accessModes:
   - ReadWriteOnce
 resources:
