@@ -1,0 +1,11 @@
+kind: v1
+apiVersion: PersistentVolumeClaim
+metadata:
+  name: ebs-dynamic
+spec:
+storageClassName: ebs-sc
+accessModes:
+  - ReadWriteOnce
+resources:
+  requests:
+    storage: 4Gi
