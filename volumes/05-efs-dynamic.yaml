@@ -4,7 +4,7 @@ metadata:
    name: efs-dynamic
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   storageClassName: efs-dynamic
   resources:
    requests:
@@ -13,9 +13,9 @@ spec:
 kind: Pod 
 apiVersion: v1 
 metadata:
-   name: nginx-dynamic-pod
+   name: efs-dynamic
    labels:
-     type: dynamic-nginx
+     purpose: efs-dynamic
 spec:
   containers:
    - name: nginx
@@ -31,11 +31,10 @@ spec:
 apiVersion: v1 
 kind: Service 
 metadata: 
-  name: nginx-dynamic
+  name: efs-dynamic
 spec:
-  type: LoadBalancer
   selector:
-   type: dynamic-nginx
+   purpose: efs-dynamic
   ports:
   -  protocol: TCP
      port: 80
