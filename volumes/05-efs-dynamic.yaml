@@ -1,4 +1,4 @@
-kind: persistentVolumeClaim
+kind: PersistentVolumeClaim
 apiVersion: v1 
 metadata:
    name: efs-dynamic
