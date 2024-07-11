@@ -12,3 +12,16 @@ spec:
   csi:
     driver: efs.csi.aws.com
     volumeHandle: fs-0ff6ea82c647b700b
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: my-pvc
+spec:
+  storageClassName: ""
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+
