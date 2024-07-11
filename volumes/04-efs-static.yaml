@@ -45,13 +45,13 @@ spec:
        claimName: my-pvc
 ---
 apiVersion: v1 
-kind: service 
+kind: Service 
 metadata:
   name: nginx-service
 spec:
     type: LoadBalancer
     selector:
-      purpose: efs-static
+      type: nginx-pod
     ports:
     - protocol: TCP
       port: 80 #service-port
