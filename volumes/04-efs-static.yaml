@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: my-efs-pv
+  name: efs-static
 spec:
   capacity:
     storage: 5Gi
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   storageClassName: ""
   csi:
@@ -19,6 +19,7 @@ metadata:
   name: my-pvc
 spec:
   storageClassName: ""
+  volumeName: efs-static
   accessModes:
     - ReadWriteOnce
   resources:
