@@ -24,8 +24,8 @@ spec:
        - name: persistent-storage
          mountPath: /usr/share/nginx/html
   volumes:
-   - name: nginx-dynamic
-     persistentVolumeClaim: 
+   - name: persistent-storage
+     PersistentVolumeClaim: 
        claimName: efs-dynamic
 ---
 apiVersion: v1 
