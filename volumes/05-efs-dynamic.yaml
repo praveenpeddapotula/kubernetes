@@ -13,7 +13,7 @@ spec:
 kind: Pod 
 apiVersion: v1 
 metadata:
-   name: efs-dynamic
+   name: efs-dynamic-pod
    labels:
      purpose: efs-dynamic
 spec:

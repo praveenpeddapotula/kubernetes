@@ -51,7 +51,7 @@ metadata:
 spec:
     type: LoadBalancer
     selector:
-      type: nginx-pod
+      purpose: efs-static
     ports:
     - protocol: TCP
       port: 80 #service-port
